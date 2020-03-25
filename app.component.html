@@ -1,0 +1,57 @@
+<div style="text-align: center;">
+<h1>Registration Page</h1>
+
+  <label for="Name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input id="Name" [(ngModel)]="name"/>
+<br><br>
+  <label for="password">Password:</label>
+  <input id="password" [(ngModel)]="password"/>
+  <br><br>
+  <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input id="email" [(ngModel)]="email"/>
+  <br><br>
+  <label for="city">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input id="city" [(ngModel)]="city"/>
+  <br><br>
+  <label for="country">Country:&nbsp;&nbsp;</label>
+  <input id="country" [(ngModel)]="country"/>
+  <br><br>
+
+  <button (click)="displaydata()">Submit</button>
+
+  <div [hidden]="Textinput1" [ngStyle]="my">
+
+  <h1>Welcome</h1>  
+
+  <h2>Name:</h2>
+  {{name}}
+
+  <h2>Password:</h2>
+  {{password}}
+
+  <h2>Email:</h2>
+  {{email}}
+
+  <h2>City:</h2>
+  {{city}}
+
+  <h2>Country:</h2>
+  {{country}}
+</div>
+
+</div>
+
+<h1>Input Box</h1>
+
+<button (click)="displayInputBox()">Press button</button>
+
+<input type="text" [hidden]="Textinput2">
+
+<input type="text" [hidden]="Textinput2">
+
+<input type="text" [hidden]="Textinput2">
+
+<h1>Radio Button</h1>
+<input type="radio" (click) = "displayText($event)">press button
+
+<p [hidden]="Textinput">Welcome To Page</p>
